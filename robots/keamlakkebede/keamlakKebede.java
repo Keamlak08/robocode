@@ -66,40 +66,7 @@ public class keamlakKebede extends Robot{
         }
         
 
-        /* 
-
-        ------REST OF THIS COMMENT IS FROM INTERNET FOR EXPIREMNTATION PURPOSES-----
-        double bulletPower = Math.min(3.0, getEnergy());
-        double myX = getX();
-        double myY = getY();
-        double enemyX = myX + e.getDistance() * Math.sin(Math.toRadians(getHeading() + e.getBearing()));
-        double enemyY = myY + e.getDistance() * Math.cos(Math.toRadians(getHeading() + e.getBearing()));
-        double enemyHeading = e.getHeading();
-        double enemyVelocity = e.getVelocity();
-
-        double deltaTime = 0;
-        double predictedX = enemyX;
-        double predictedY = enemyY;
-
-        while ((++deltaTime) * (20 - 3 * bulletPower) < Math.hypot(predictedX - myX, predictedY - myY)) {
-            predictedX += Math.sin(Math.toRadians(enemyHeading)) * enemyVelocity;
-            predictedY += Math.cos(Math.toRadians(enemyHeading)) * enemyVelocity;
-
-            if(predictedX < 18.0 || predictedY < 18.0 || predictedX > getBattleFieldWidth() - 18.0 || predictedY > getBattleFieldHeight() - 18.0) {
-                predictedX = Math.min(Math.max(18.0, predictedX), getBattleFieldWidth() - 18.0);
-                predictedY = Math.min(Math.max(18.0, predictedY), getBattleFieldHeight() - 18.0);
-                break;
-            }
-        }
-
-        double theta = Math.toDegrees(Math.atan2(predictedX - myX, predictedY - myY));
-        double gunTurn = getPerepheral(theta - getGunHeading());
-
-        turnGunRight(gunTurn);
-        if(getGunHeat() == 0 && Math.abs(gunTurn) < 10){
-            fire(bulletPower);
-        }
-        */
+       
     }
 
 
