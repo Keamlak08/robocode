@@ -78,8 +78,9 @@ public class keamlakKebede extends Robot{
         reverseDirection();
     }
 
+
     public void onHitByBullet(HitByBulletEvent event){
-        turnRight(Math.random() * 50 - 25);
+        turnRight(90 - event.getBearing()); //took this from 'MyFirstRobot'
         reverseDirection();
     }
 
